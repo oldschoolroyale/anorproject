@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationInfoFragment"
+            app:destination="@id/registrationInfoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationInfoFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.registration.RegistrationInfoFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationInfoFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_registrationInfoFragment_to_registrationContactFragment"
+            app:destination="@id/registrationContactFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationContactFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.registration.RegistrationContactFragment"
+        android:label="fragment_contact_registration"
+        tools:layout="@layout/fragment_contact_registration" >
+        <action
+            android:id="@+id/action_registrationContactFragment_to_registrationInfoFragment"
+            app:destination="@id/registrationInfoFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_registrationContactFragment_to_registrationPasswordFragment"
+            app:destination="@id/registrationPasswordFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPasswordFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.registration.RegistrationPasswordFragment"
+        android:label="fragment_registration_password"
+        tools:layout="@layout/fragment_registration_password" >
+        <action
+            android:id="@+id/action_registrationPasswordFragment_to_registrationContactFragment"
+            app:destination="@id/registrationContactFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_registrationPasswordFragment_to_registrationVerifyFragment"
+            app:destination="@id/registrationVerifyFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationVerifyFragment"
+        android:name="com.brmlab.anorproject.ui.fragment.auth.registration.RegistrationVerifyFragment"
+        android:label="fragment_registration_verify"
+        tools:layout="@layout/fragment_registration_verify" >
+        <action
+            android:id="@+id/action_registrationVerifyFragment_to_registrationPasswordFragment"
+            app:destination="@id/registrationPasswordFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+    </fragment>
+</navigation>
