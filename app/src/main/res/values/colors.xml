@@ -4,4 +4,24 @@
     <color name="colorBrandSecondary">#F61042</color>
     <color name="colorBrandSecondaryMinor">#FEE7EC</color>
     <color name="colorBrandPrimaryMinor">#9CB2D0</color>
+    <color name="colorBrandPrimaryGhost">#E1E7F0</color>
+    <color name="colorBrandPrimaryDark">#022D64</color>
+    <color name="colorBrandPrimaryDarkest">#021E42</color>
+    <color name="colorAdditionalBlack">#000000</color>
+    <color name="colorAdditionalWhite">#FFFFFF</color>
+    <color name="colorAdditionalColor1">#EDF2F9</color>
+    <color name="colorAdditionalColor2">#F4F4F4</color>
+    <color name="colorAdditionalOverlay">#00142F</color>
+    <color name="colorButtonAccentPrimaryNormal">#063E88</color>
+    <color name="colorButtonAccentPrimaryOverflow">#0D4998</color>
+    <color name="colorButtonAccentPrimaryPressed">#043A82</color>
+    <color name="colorButtonAccentPrimaryDisabled">#E5E5E5</color>
+    <color name="colorButtonAccentSecondaryNormal">#F61042</color>
+
+
+
+
+
+
+
 </resources>
